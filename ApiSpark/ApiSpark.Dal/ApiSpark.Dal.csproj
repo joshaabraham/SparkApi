@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E22F649-5AEE-42B7-A13D-3D692C4980F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ApiSpark.Dal</RootNamespace>
+    <AssemblyName>ApiSpark.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcademyContextEntities.cs" />
+    <Compile Include="Academies\Academy.cs" />
+    <Compile Include="Academies\Course.cs" />
+    <Compile Include="Calendrier\Calendar.cs" />
+    <Compile Include="Calendrier\Color.cs" />
+    <Compile Include="Calendrier\Datum.cs" />
+    <Compile Include="Calendrier\Meta.cs" />
+    <Compile Include="Calendrier\Resizable.cs" />
+    <Compile Include="Chat\Chat.cs" />
+    <Compile Include="Chat\ChatList.cs" />
+    <Compile Include="Chat\ContactStatus.cs" />
+    <Compile Include="Chat\Dialog.cs" />
+    <Compile Include="Chat\User.cs" />
+    <Compile Include="Configuration\Blocage.cs" />
+    <Compile Include="Configuration\Connexion.cs" />
+    <Compile Include="Configuration\Filter.cs" />
+    <Compile Include="Configuration\IntegrationProfessionelle.cs" />
+    <Compile Include="Configuration\Langue.cs" />
+    <Compile Include="Configuration\Localisation.cs" />
+    <Compile Include="Configuration\Notification.cs" />
+    <Compile Include="Configuration\Publication.cs" />
+    <Compile Include="Configuration\Recommandation.cs" />
+    <Compile Include="Configuration\Search.cs" />
+    <Compile Include="Configuration\ViePrivee.cs" />
+    <Compile Include="ContenuTextuel\Article.cs" />
+    <Compile Include="ContenuTextuel\Comment.cs" />
+    <Compile Include="ContenuTextuel\Event.cs" />
+    <Compile Include="ContenuTextuel\Filter.cs" />
+    <Compile Include="ContenuTextuel\Media.cs" />
+    <Compile Include="ContenuTextuel\Note.cs" />
+    <Compile Include="ContenuTextuel\Post.cs" />
+    <Compile Include="ContenuTextuel\Tag.cs" />
+    <Compile Include="ContenuTextuel\Todo.cs" />
+    <Compile Include="ContenuTextuel\User.cs" />
+    <Compile Include="LigneTemporelle\Activity.cs" />
+    <Compile Include="LigneTemporelle\Post.cs" />
+    <Compile Include="LigneTemporelle\Timeline.cs" />
+    <Compile Include="LigneTemporelle\User.cs" />
+    <Compile Include="Magasin\AdresseFacturation.cs" />
+    <Compile Include="Magasin\AdresseLivraison.cs" />
+    <Compile Include="Magasin\Carte.cs" />
+    <Compile Include="Magasin\Client.cs" />
+    <Compile Include="Magasin\Image.cs" />
+    <Compile Include="Magasin\Invoice.cs" />
+    <Compile Include="Magasin\InvoiceClient.cs" />
+    <Compile Include="Magasin\InvoiceFrom.cs" />
+    <Compile Include="Magasin\InvoiceService.cs" />
+    <Compile Include="Magasin\ListeSouhaitAchat.cs" />
+    <Compile Include="Magasin\Product.cs" />
+    <Compile Include="Mail\Mail.cs" />
+    <Compile Include="Mail\MailAttachment.cs" />
+    <Compile Include="Mail\MailFrom.cs" />
+    <Compile Include="Mail\MailTo.cs" />
+    <Compile Include="Media\Files.cs" />
+    <Compile Include="Media\Medium.cs" />
+    <Compile Include="Media\PhotosVideo.cs" />
+    <Compile Include="Migrations\202004210632507_Initial.cs" />
+    <Compile Include="Migrations\202004210632507_Initial.designer.cs">
+      <DependentUpon>202004210632507_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScrumBoard\Boards.cs" />
+    <Compile Include="ScrumBoard\Card.cs" />
+    <Compile Include="ScrumBoard\Label.cs" />
+    <Compile Include="ScrumBoard\List.cs" />
+    <Compile Include="ScrumBoard\Member.cs" />
+    <Compile Include="ScrumBoard\Settings.cs" />
+    <Compile Include="Sportifs\Arbitre.cs" />
+    <Compile Include="Sportifs\Equipe.cs" />
+    <Compile Include="Sportifs\Joueur.cs" />
+    <Compile Include="UtilisateurRelation\Contact.cs" />
+    <Compile Include="UtilisateurRelation\UserContact.cs" />
+    <Compile Include="UtilisateurRelation\UserGroup.cs" />
+    <Compile Include="Utilisateur\Friend.cs" />
+    <Compile Include="Utilisateur\General.cs" />
+    <Compile Include="Utilisateur\Group.cs" />
+    <Compile Include="Utilisateur\Job.cs" />
+    <Compile Include="Utilisateur\Profil.cs" />
+    <Compile Include="Utilisateur\ProfilContact.cs" />
+    <Compile Include="Utilisateur\Work.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Administrateur\" />
+    <Folder Include="CentreSportif\" />
+    <Folder Include="Competition\" />
+    <Folder Include="Publicite\" />
+    <Folder Include="Sport\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202004210632507_Initial.resx">
+      <DependentUpon>202004210632507_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>

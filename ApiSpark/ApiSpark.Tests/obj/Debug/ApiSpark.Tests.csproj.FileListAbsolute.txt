@@ -1,0 +1,2 @@
+E:\c_sharp_projets\ApiSpark\ApiSpark\ApiSpark.Tests\obj\Debug\ApiSpark.Tests.csprojAssemblyReference.cache
+E:\c_sharp_projets\ApiSpark\ApiSpark\ApiSpark.Tests\obj\Debug\ApiSpark.Tests.csproj.CoreCompileInputs.cache
