@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace ApiSpark
 {
@@ -9,7 +12,16 @@ namespace ApiSpark
     {
         public static void Register(HttpConfiguration config)
         {
-            // Configuration et services API Web
+            // Web API configuration and services
+            var cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
+
+            // Web API configuration and services
+            var settings = config.Formatters.JsonFormatter.SerializerSettings;
+            settings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            settings.Formatting = Formatting.Indented;
+
+            config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
 
             // Itinéraires de l'API Web
             config.MapHttpAttributeRoutes();

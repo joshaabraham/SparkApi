@@ -1,0 +1,3 @@
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\Console\obj\Debug\ConsoleHost.csproj.CoreCompileInputs.cache
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\Console\obj\Debug\Console.exe
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\Console\obj\Debug\Console.pdb
