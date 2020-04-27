@@ -11,11 +11,11 @@ namespace ConsoleHost
     {
         static void Main(string[] args)
         {
-            string uri = "//localhost:8989";
+            string uri = "http://localhost:8989";
             using (WebApp.Start<Startup>(uri))
             {
                 Console.WriteLine($"Server started at {uri} on {DateTime.UtcNow:F}");
-                
+                Console.ReadKey();
             }
         }
     }

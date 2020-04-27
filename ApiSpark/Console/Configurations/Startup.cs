@@ -1,4 +1,5 @@
 ﻿using ConsoleHost.Configurations;
+using Microsoft.AspNet.SignalR;
 using Microsoft.Owin.Cors;
 using Owin;
 using System;
@@ -17,11 +18,14 @@ namespace ConsoleHost
             HttpConfiguration config = new HttpConfiguration();
             RouteConfig.RegisterRoutes(config);
             app.UseCors(CorsOptions.AllowAll);
-            app.Map("signalR", map =>
+
+
+            app.Map("/signalr", map =>
             {
-                HttpConfiguration hcf = new HttpConfiguration();
+                HubConfiguration hcf = new HubConfiguration();
                 map.RunSignalR();
             });
+          
         }
     }
 }
