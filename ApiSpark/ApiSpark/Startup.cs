@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
+using System.Web.Http;
 using Microsoft.Owin;
+using Microsoft.Owin.Security.OAuth;
 using Owin;
 
 [assembly: OwinStartup(typeof(ApiSpark.Startup))]
@@ -17,7 +19,7 @@ namespace ApiSpark
             //enable cors origin requests
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
 
-            var myProvider = new MyAuthorizationServerProvider();
+            var myProvider = new AuthentificationService();
             OAuthAuthorizationServerOptions options = new OAuthAuthorizationServerOptions
             {
                 AllowInsecureHttp = true,
