@@ -223,3 +223,13 @@ E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\Microsoft.Owin.
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\Microsoft.Owin.Security.xml
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\System.Web.Http.Cors.xml
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\System.Web.Http.Owin.xml
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\Microsoft.AspNet.Identity.Core.dll
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\Microsoft.Owin.Security.Cookies.dll
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\Microsoft.Owin.Security.OAuth.dll
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\Microsoft.AspNet.Identity.Core.xml
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\Microsoft.Owin.Security.Cookies.xml
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark\bin\Microsoft.Owin.Security.OAuth.xml
