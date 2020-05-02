@@ -1,4 +1,4 @@
-﻿using ConsoleHost.Configurations;
+﻿using ApiSpark.Configurations;
 using Microsoft.AspNet.SignalR;
 using Microsoft.Owin.Cors;
 using Owin;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace ConsoleHost
+namespace ApiSpark
 {
     public partial class Startup
     {

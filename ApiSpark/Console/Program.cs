@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleHost
+namespace ApiSpark
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             string uri = "http://localhost:8989";

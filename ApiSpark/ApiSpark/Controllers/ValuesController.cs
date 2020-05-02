@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ApiSpark.hubs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -12,12 +13,14 @@ namespace ApiSpark.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
+            Global.LogMessage("Data from Controller");
             return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
         public string Get(int id)
         {
+            Global.LogMessage("Request param : " + id);
             return "value";
         }
 

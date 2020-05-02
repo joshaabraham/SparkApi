@@ -1,0 +1,10 @@
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\FacebookGraphUsing\bin\Debug\FacebookGraphUsing.exe.config
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\FacebookGraphUsing\bin\Debug\FacebookGraphUsing.exe
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\FacebookGraphUsing\bin\Debug\FacebookGraphUsing.pdb
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\FacebookGraphUsing\bin\Debug\Facebook.dll
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\FacebookGraphUsing\bin\Debug\Facebook.xml
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\FacebookGraphUsing\obj\Debug\FacebookGraphUsing.csprojAssemblyReference.cache
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\FacebookGraphUsing\obj\Debug\FacebookGraphUsing.csproj.CoreCompileInputs.cache
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\FacebookGraphUsing\obj\Debug\FacebookGraphUsing.csproj.CopyComplete
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\FacebookGraphUsing\obj\Debug\FacebookGraphUsing.exe
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\FacebookGraphUsing\obj\Debug\FacebookGraphUsing.pdb
