@@ -7,10 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiSpark", "ApiSpark\ApiSpa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiSpark.Dal", "ApiSpark.Dal\ApiSpark.Dal.csproj", "{7E22F649-5AEE-42B7-A13D-3D692C4980F6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{7930510D-9910-4E3F-816B-A9A6C2B8F284}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{288B1249-3D9A-4915-8A71-3B4F15EEFD35}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{9C1B4E50-A20A-43B4-925A-1B44376ED814}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookGraphUsing", "FacebookGraphUsing\FacebookGraphUsing.csproj", "{49358EBB-C9A8-456C-AE8A-A687420A1F7A}"

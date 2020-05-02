@@ -28,7 +28,6 @@ E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\Console\bin\Debug\System.Web
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\Console\bin\Debug\System.Web.Http.Owin.xml
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\Console\bin\Debug\fr\System.Net.Http.Formatting.resources.dll
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\Console\bin\Debug\fr\System.Web.Http.resources.dll
-E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\Console\obj\Debug\Console.csprojAssemblyReference.cache
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\Console\obj\Debug\Console.csproj.CoreCompileInputs.cache
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\Console\obj\Debug\Console.csproj.CopyComplete
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\Console\obj\Debug\Console.exe
