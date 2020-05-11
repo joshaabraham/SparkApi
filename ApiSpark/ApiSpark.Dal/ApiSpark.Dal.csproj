@@ -51,7 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AcademyContextEntities.cs" />
+    <Compile Include="Configuration\Configuration.cs" />
+    <Compile Include="Contexts\AcademyContextEntities.cs" />
     <Compile Include="Academies\Academy.cs" />
     <Compile Include="Academies\Course.cs" />
     <Compile Include="Calendrier\Calendar.cs" />
@@ -85,10 +86,13 @@
     <Compile Include="ContenuTextuel\Tag.cs" />
     <Compile Include="ContenuTextuel\Todo.cs" />
     <Compile Include="ContenuTextuel\User.cs" />
+    <Compile Include="Contexts\ConfigurationContextEntities.cs" />
     <Compile Include="LigneTemporelle\Activity.cs" />
     <Compile Include="LigneTemporelle\Post.cs" />
     <Compile Include="LigneTemporelle\Timeline.cs" />
     <Compile Include="LigneTemporelle\User.cs" />
+    <Compile Include="LogInfo\Login.cs" />
+    <Compile Include="Contexts\LoginInfoContextEntities.cs" />
     <Compile Include="Magasin\AdresseFacturation.cs" />
     <Compile Include="Magasin\AdresseLivraison.cs" />
     <Compile Include="Magasin\Carte.cs" />
@@ -107,9 +111,9 @@
     <Compile Include="Media\Files.cs" />
     <Compile Include="Media\Medium.cs" />
     <Compile Include="Media\PhotosVideo.cs" />
-    <Compile Include="Migrations\202004210632507_Initial.cs" />
-    <Compile Include="Migrations\202004210632507_Initial.designer.cs">
-      <DependentUpon>202004210632507_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\202005110313409_Login_initial.cs" />
+    <Compile Include="Migrations\202005110313409_Login_initial.designer.cs">
+      <DependentUpon>202005110313409_Login_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -147,8 +151,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202004210632507_Initial.resx">
-      <DependentUpon>202004210632507_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202005110313409_Login_initial.resx">
+      <DependentUpon>202005110313409_Login_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

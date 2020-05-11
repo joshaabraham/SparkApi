@@ -63,6 +63,9 @@
     <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.4.1\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=2.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.2.2\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -214,8 +217,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="hubs\NotificationHub.cs" />
-    <Compile Include="hubs\WebApiConfig  .cs" />
+    <Compile Include="Hubs\ChatHub.cs" />
+    <Compile Include="Hubs\Clock.cs" />
+    <Compile Include="Hubs\NotificationHub.cs" />
+    <Compile Include="Hubs\WebApiConfig  .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -275,6 +280,8 @@
     <Content Include="Scripts\jquery-3.5.0.min.js" />
     <Content Include="Scripts\jquery-3.5.0.slim.js" />
     <Content Include="Scripts\jquery-3.5.0.slim.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.2.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.2.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
@@ -393,6 +400,10 @@
     <ProjectReference Include="..\ApiSpark.Dal\ApiSpark.Dal.csproj">
       <Project>{7e22f649-5aee-42b7-a13d-3d692c4980f6}</Project>
       <Name>ApiSpark.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OAuth2\OAuth2.csproj">
+      <Project>{495455e1-a795-40f3-8894-b3f07d4ade71}</Project>
+      <Name>OAuth2</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

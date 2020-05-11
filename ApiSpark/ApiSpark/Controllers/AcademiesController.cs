@@ -11,6 +11,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using ApiSpark.Dal;
 using ApiSpark.Dal.Academies;
+using ApiSpark.Dal.Contexts;
 
 namespace ApiSpark.Controllers
 {

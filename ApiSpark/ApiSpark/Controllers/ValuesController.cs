@@ -13,7 +13,7 @@ namespace ApiSpark.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-           // Global.LogMessage("Data from Controller");
+            Global.LogMessage("Data from Controller");
             return new string[] { "value1", "value2" };
         }
 

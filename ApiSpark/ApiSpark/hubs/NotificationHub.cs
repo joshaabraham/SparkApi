@@ -20,7 +20,7 @@ namespace ApiSpark.hubs
             }
             catch(Exception e)
             {
-                throw;
+                throw e;
 
             }
         }

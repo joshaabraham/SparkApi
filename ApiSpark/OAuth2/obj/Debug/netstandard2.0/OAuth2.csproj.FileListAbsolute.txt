@@ -1,0 +1,11 @@
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\OAuth2\bin\Debug\netstandard2.0\OAuth2.deps.json
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\OAuth2\bin\Debug\netstandard2.0\OAuth2.dll
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\OAuth2\bin\Debug\netstandard2.0\OAuth2.pdb
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\OAuth2\bin\Debug\netstandard2.0\OAuth2.xml
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\OAuth2\obj\Debug\netstandard2.0\OAuth2.csprojAssemblyReference.cache
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\OAuth2\obj\Debug\netstandard2.0\OAuth2.csproj.CoreCompileInputs.cache
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\OAuth2\obj\Debug\netstandard2.0\OAuth2.AssemblyInfoInputs.cache
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\OAuth2\obj\Debug\netstandard2.0\OAuth2.AssemblyInfo.cs
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\OAuth2\obj\Debug\netstandard2.0\OAuth2.dll
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\OAuth2\obj\Debug\netstandard2.0\OAuth2.xml
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\OAuth2\obj\Debug\netstandard2.0\OAuth2.pdb

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ApiSpark.Dal.Academies;
     
-namespace ApiSpark.Dal
+namespace ApiSpark.Dal.Contexts
 {
     public class AcademyContextEntities : DbContext
     {
