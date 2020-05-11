@@ -21,5 +21,6 @@ namespace ApiSpark.Dal.LogInfo
         [MaxLength(55), Required]
         public string Password { get; set; }
 
+        public virtual User User { get; set; }
     }
 }

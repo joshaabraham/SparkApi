@@ -93,6 +93,7 @@
     <Compile Include="LigneTemporelle\User.cs" />
     <Compile Include="LogInfo\Login.cs" />
     <Compile Include="Contexts\LoginInfoContextEntities.cs" />
+    <Compile Include="LogInfo\User.cs" />
     <Compile Include="Magasin\AdresseFacturation.cs" />
     <Compile Include="Magasin\AdresseLivraison.cs" />
     <Compile Include="Magasin\Carte.cs" />
@@ -111,10 +112,6 @@
     <Compile Include="Media\Files.cs" />
     <Compile Include="Media\Medium.cs" />
     <Compile Include="Media\PhotosVideo.cs" />
-    <Compile Include="Migrations\202005110313409_Login_initial.cs" />
-    <Compile Include="Migrations\202005110313409_Login_initial.designer.cs">
-      <DependentUpon>202005110313409_Login_initial.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScrumBoard\Boards.cs" />
@@ -124,8 +121,10 @@
     <Compile Include="ScrumBoard\Member.cs" />
     <Compile Include="ScrumBoard\Settings.cs" />
     <Compile Include="Sportifs\Arbitre.cs" />
+    <Compile Include="Sportifs\Entraineur.cs" />
     <Compile Include="Sportifs\Equipe.cs" />
     <Compile Include="Sportifs\Joueur.cs" />
+    <Compile Include="Sportifs\Sportif.cs" />
     <Compile Include="UtilisateurRelation\Contact.cs" />
     <Compile Include="UtilisateurRelation\UserContact.cs" />
     <Compile Include="UtilisateurRelation\UserGroup.cs" />
@@ -149,11 +148,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202005110313409_Login_initial.resx">
-      <DependentUpon>202005110313409_Login_initial.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

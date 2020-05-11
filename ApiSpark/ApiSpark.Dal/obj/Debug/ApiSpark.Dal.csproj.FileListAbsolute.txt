@@ -24,5 +24,3 @@ E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSp
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.dll
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.pdb
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.csprojAssemblyReference.cache
-E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.Migrations.Login_initial.resources
-E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.csproj.GenerateResource.cache

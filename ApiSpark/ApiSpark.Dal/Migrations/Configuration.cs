@@ -5,14 +5,14 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<ApiSpark.Dal.Contexts.ConfigurationContextEntities>
+    internal sealed class Configuration : DbMigrationsConfiguration<ApiSpark.Dal.Contexts.LoginInfoContextEntities>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(ApiSpark.Dal.Contexts.ConfigurationContextEntities context)
+        protected override void Seed(ApiSpark.Dal.Contexts.LoginInfoContextEntities context)
         {
             //  This method will be called after migrating to the latest version.
 
