@@ -31,7 +31,6 @@ namespace ApiSpark.Dal.Academies
         [Required]
         public long TotalSteps { get; set; }
 
-
         public string Updated { get; set; }
 
         [Required]

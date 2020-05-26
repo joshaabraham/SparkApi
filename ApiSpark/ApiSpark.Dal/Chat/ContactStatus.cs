@@ -1,6 +1,9 @@
 
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace ApiSpark.Dal.Chat
 {
+    [Table("ContactStatus")]
     public class ContactStatus
     {
         public string ContactStatusId { get; set; }
@@ -9,5 +12,7 @@ namespace ApiSpark.Dal.Chat
         public string Status { get; set; }
         public string Mood { get; set; }
         public string Unread { get; set; }
+
+        public Dialog dialog { get; set; }
     }
 }
