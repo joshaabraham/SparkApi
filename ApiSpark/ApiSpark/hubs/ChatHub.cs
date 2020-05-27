@@ -10,6 +10,21 @@ namespace ApiSpark.hubs
     public class ChatHub : Hub
     {
 
+        private static IHubContext hubContext = GlobalHost.ConnectionManager.GetHubContext<ChatHub>();
+
+        public static void PostToClient(string data)
+        {
+            try
+            {
+                var chat = GlobalHost.ConnectionManager.GetHubContext("Requestlog");
+                if (chat != null)
+                    chat.Clients.All.postToClient(data);
+            }
+            catch
+            {
+            }
+        }
+
         public async Task PostMessage (string userId, string name, string message)
         {
             await Clients.User(userId).addNewMessageToPage(name, message);

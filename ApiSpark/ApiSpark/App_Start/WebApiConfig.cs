@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using ApiSpark.hubs;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,14 @@ namespace ApiSpark
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            Global.LogMessage = ChatHub.PostToClient;
         }
+    }
+
+    public class Global
+    {
+        public delegate void DelLogMessage(string data);
+        public static DelLogMessage LogMessage;
     }
 }

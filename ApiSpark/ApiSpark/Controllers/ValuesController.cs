@@ -1,5 +1,6 @@
 ﻿using ApiSpark.hubs;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -11,7 +12,7 @@ namespace ApiSpark.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        public IEnumerable Get()
         {
             Global.LogMessage("Data from Controller");
             return new string[] { "value1", "value2" };
@@ -20,7 +21,7 @@ namespace ApiSpark.Controllers
         // GET api/values/5
         public string Get(int id)
         {
-          //  Global.LogMessage("Request param : " + id);
+            Global.LogMessage("Request param : " + id);
             return "value";
         }
 
