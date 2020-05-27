@@ -11,10 +11,13 @@ namespace ApiSpark.Dal.Chat
     public class ChatList
     {
         [Key]
-        public string ChatListId { get; set; }
+        public Guid ChatListId { get; set; }
         [Required]
         public string ContactId { get; set; }
         [Required]
         public DateTime LastMessageTime { get; set; }
+
+
+        public ICollection<Chat> Chats { get; set; }
     }
 }

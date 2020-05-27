@@ -13,6 +13,12 @@ namespace ApiSpark.Dal.Chat
         [Key]
         public string ChatId { get; set; }
 
-        public List<Dialog> Dialog { get; set; }
+
+        public Guid ChatListId { get; set; }
+        public ChatList ChatList { get; set; }
+
+        public ICollection<Dialog> Dialog { get; set; }
+
+
     }
 }
