@@ -40,5 +40,12 @@ namespace ApiSpark.hubs
         {
             await Groups.Remove(Context.ConnectionId, groupName);
         }
+
+        public async Task MessagesRead(IList<string> connectionsId)
+        {
+            await Clients.Clients(connectionsId).appendNewMessage(true);
+
+           
+        }
     }
 }

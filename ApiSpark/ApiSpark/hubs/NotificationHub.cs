@@ -1,5 +1,4 @@
-﻿using ApiSpark.Hubs;
-using Microsoft.AspNet.SignalR;
+﻿using Microsoft.AspNet.SignalR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +14,9 @@ namespace ApiSpark.hubs
         {
             try
             {
-                var chat = GlobalHost.ConnectionManager.GetHubContext("Requestlog");
-                if (chat != null)
-                    chat.Clients.All.postToClient(data);
+                var notification = GlobalHost.ConnectionManager.GetHubContext("Requestlog");
+                if (notification != null)
+                    notification.Clients.All.postToClient(data);
             }
             catch(Exception e)
             {

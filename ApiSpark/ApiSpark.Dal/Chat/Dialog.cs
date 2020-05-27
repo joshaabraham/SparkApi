@@ -12,7 +12,6 @@ namespace ApiSpark.Dal.Chat
         public string Who { get; set; }
         public string Message { get; set; }
         public DateTime Time { get; set; }
-
         public ContactStatus status { get; set; }
 
     }
