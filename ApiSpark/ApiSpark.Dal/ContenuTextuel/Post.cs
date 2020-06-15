@@ -14,7 +14,7 @@ namespace ApiSpark.Dal.ContenuTextuel
         public string Type { get; set; }
         public int Like { get; set; }
         public int Share { get; set; }
-        public Media Media { get; set; }
+        public List<Media> Media { get; set; }
         public List<Comment> Comments { get; set; }
         public Article Article { get; set; }
     }
