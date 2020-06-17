@@ -4,6 +4,7 @@ using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
@@ -24,7 +25,7 @@ namespace ApiSpark
 
             config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
 
-            // Itinéraires de l'API Web
+           // Itinéraires de l'API Web
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
@@ -32,6 +33,8 @@ namespace ApiSpark
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            Global.LogMessage = NotificationHub.PostToClient;
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
 
             Global.LogMessage = ChatHub.PostToClient;
         }

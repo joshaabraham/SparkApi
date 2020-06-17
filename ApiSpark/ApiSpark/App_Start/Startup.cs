@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using ApiSpark.hubs;
 
 [assembly: OwinStartup(typeof(ApiSpark.App_Start.Startup))]
 
@@ -20,8 +21,8 @@ namespace ApiSpark.App_Start
         public void Configuration(IAppBuilder app)
         {
 
-            ConfigureAuth(app);
-            GlobalConfiguration.Configure(WebApiConfig.Register);
+           // ConfigureAuth(app);
+           // GlobalConfiguration.Configure(WebApiConfig.Register);
 
             // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=316888
             // app.MapSignalR("/signalr", new HubConfiguration());
@@ -38,34 +39,43 @@ namespace ApiSpark.App_Start
                 AccessTokenExpireTimeSpan = TimeSpan.FromDays(1),
                 Provider = myProvider
             };
+            app.UseOAuthBearerTokens(options);
             app.UseOAuthAuthorizationServer(options);
             app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
 
 
             HttpConfiguration config = new HttpConfiguration();
-            WebApiConfig.Register(config);
+           // WebApiConfig.Register(config);
         }
 
-        public void ConfigureAuth(IAppBuilder app)
-        {
-            //this is very important line cross orgin source(CORS)it is used to enable cross-site HTTP requests  
-            //For security reasons, browsers restrict cross-origin HTTP requests  
-            app.UseCors(CorsOptions.AllowAll);
+        //public void ConfigureAuth(IAppBuilder app)
+        //{
+        //   // ConfigureAuth(app);
+        //    GlobalConfiguration.Configure(WebApiConfig.Register);
 
-            var OAuthOptions = new OAuthAuthorizationServerOptions
-            {
-                AllowInsecureHttp = true,
-                TokenEndpointPath = new PathString("/token"),
-                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(30),//token expiration time  
-                Provider = new OAuthProvider()
-            };
+        //    // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=316888
+        //    // app.MapSignalR("/signalr", new HubConfiguration());
 
-            app.UseOAuthBearerTokens(OAuthOptions);
-            app.UseOAuthAuthorizationServer(OAuthOptions);
-            app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
+        //    app.MapSignalR();
 
-            HttpConfiguration config = new HttpConfiguration();
-            WebApiConfig.Register(config);//register the request  
-        }
+        //    //this is very important line cross orgin source(CORS)it is used to enable cross-site HTTP requests  
+        //    //For security reasons, browsers restrict cross-origin HTTP requests  
+        //    app.UseCors(CorsOptions.AllowAll);
+
+        //    var OAuthOptions = new OAuthAuthorizationServerOptions
+        //    {
+        //        AllowInsecureHttp = true,
+        //        TokenEndpointPath = new PathString("/token"),
+        //        AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(30),//token expiration time  
+        //        Provider = new OAuthProvider()
+        //    };
+
+        //    app.UseOAuthBearerTokens(OAuthOptions);
+        //    app.UseOAuthAuthorizationServer(OAuthOptions);
+        //    app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
+
+        //    HttpConfiguration config = new HttpConfiguration();
+        //    WebApiConfig.Register(config);//register the request  
+        //}
     }
 }

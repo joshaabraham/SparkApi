@@ -219,7 +219,6 @@
     </Compile>
     <Compile Include="Hubs\ChatHub.cs" />
     <Compile Include="Hubs\NotificationHub.cs" />
-    <Compile Include="Hubs\WebApiConfig  .cs" />
     <Compile Include="Models\BDD_contextes\UserLoginContext\Login.cs">
       <DependentUpon>UserLoginModel.tt</DependentUpon>
     </Compile>
