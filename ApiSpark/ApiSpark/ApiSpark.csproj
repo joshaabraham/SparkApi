@@ -220,6 +220,27 @@
     <Compile Include="Hubs\ChatHub.cs" />
     <Compile Include="Hubs\NotificationHub.cs" />
     <Compile Include="Hubs\WebApiConfig  .cs" />
+    <Compile Include="Models\BDD_contextes\UserLoginContext\Login.cs">
+      <DependentUpon>UserLoginModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BDD_contextes\UserLoginContext\User.cs">
+      <DependentUpon>UserLoginModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BDD_contextes\UserLoginContext\UserLoginModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserLoginModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BDD_contextes\UserLoginContext\UserLoginModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserLoginModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BDD_contextes\UserLoginContext\UserLoginModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserLoginModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Provider\OAuthProvider.cs" />
   </ItemGroup>
@@ -252,6 +273,16 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Models\BDD_contextes\UserLoginContext\UserLoginModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>UserLoginModel.Context.cs</LastGenOutput>
+      <DependentUpon>UserLoginModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\BDD_contextes\UserLoginContext\UserLoginModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UserLoginModel.edmx</DependentUpon>
+      <LastGenOutput>UserLoginModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -275,6 +306,13 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
+    <EntityDeploy Include="Models\BDD_contextes\UserLoginContext\UserLoginModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>UserLoginModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\BDD_contextes\UserLoginContext\UserLoginModel.edmx.diagram">
+      <DependentUpon>UserLoginModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.5.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.0.js" />
     <Content Include="Scripts\jquery-3.5.0.min.js" />
@@ -383,7 +421,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -392,6 +429,7 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />

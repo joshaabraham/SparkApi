@@ -19,10 +19,9 @@ E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\bin\Debug\Entit
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\bin\Debug\EntityFramework.SqlServer.dll
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\bin\Debug\EntityFramework.xml
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\bin\Debug\EntityFramework.SqlServer.xml
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.Migrations.loginUserV1.resources
+E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.csproj.GenerateResource.cache
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.csproj.CoreCompileInputs.cache
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.csproj.CopyComplete
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.dll
 E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.pdb
-E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.csprojAssemblyReference.cache
-E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.Migrations.loginUserV1.resources
-E:\c_sharp_projets\Code_first_api\SparkApi\ApiSpark\ApiSpark.Dal\obj\Debug\ApiSpark.Dal.csproj.GenerateResource.cache

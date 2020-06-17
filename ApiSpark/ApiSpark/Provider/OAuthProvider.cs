@@ -1,5 +1,5 @@
 ﻿using Microsoft.Owin.Security.OAuth;
-//using OauthApi.Models;
+using ApiSpark.Models.BDD_contextes.UserLoginContext;
 using System;
 using System.Linq;
 using System.Security.Claims;
@@ -14,43 +14,45 @@ namespace ApiSpark.Provider
             await Task.Run(() => context.Validated());
         }
 
-        //public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
-        //{
-        //    var identity = new ClaimsIdentity(context.Options.AuthenticationType);
+        public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
+        {
+            var identity = new ClaimsIdentity(context.Options.AuthenticationType);
 
-        //    //using (var db = new ApiSpark.Dal.LogInfo.Login())
-        //    //{
+            using (var db = new LoginEntities())
+            {
 
-        //    ApiSpark.Dal.LogInfo.Login db = new Dal.LogInfo.Login();
-        //    try
-        //    {
-        //        if (db != null)
-        //        {
-        //            var user = db..Where(o => o.UserName == context.UserName && o.UserPasswd == context.Password).FirstOrDefault();
-        //            if (user != null)
-        //            {
-        //                identity.AddClaim(new Claim(ClaimTypes.Role, user.UserRole));
-        //                identity.AddClaim(new Claim(ClaimTypes.Name, user.UserName));
-        //                identity.AddClaim(new Claim("LoggedOn", DateTime.Now.ToString()));
-        //                await Task.Run(() => context.Validated(identity));
-        //            }
-        //            else
-        //            {
-        //                context.SetError("Wrong Crendtials", "Provided username and password is incorrect");
-        //            }
-        //        }
-        //        else
-        //        {
-        //            context.SetError("Wrong Crendtials", "Provided username and password is incorrect");
-        //        }
+                // UserLogin db = new Models.BDD_contextes.UserLoginContext();
+                try
+                {
+                    if (db != null)
+                    {
+                        var login = db.Login.Where(o => o.Email == context.UserName && o.Password == context.Password).FirstOrDefault();
+                        if (login != null)
+                        {
+                            identity.AddClaim(new Claim(ClaimTypes.Role, login.UserRole));
+                            identity.AddClaim(new Claim(ClaimTypes.Email, login.Email));
+                            identity.AddClaim(new Claim("LoggedOn", DateTime.Now.ToString()));
+                            await Task.Run(() => context.Validated(identity));
+                        }
+                        else
+                        {
+                            context.SetError("Wrong Crendtials", "Provided username and password is incorrect");
+                        }
+                    }
+                    else
+                    {
+                        context.SetError("Wrong Crendtials", "Provided username and password is incorrect");
+                    }
 
-        //    }
-        //    catch (Exception)
-        //    {
+                }
+                catch (Exception)
+                {
 
-        //        throw;
-        //    }
-                          
-        //}
+                    throw;
+                }
+
+            }
+
+        }
     }
 }
