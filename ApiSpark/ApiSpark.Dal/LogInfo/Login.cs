@@ -22,5 +22,8 @@ namespace ApiSpark.Dal.LogInfo
         public string Password { get; set; }
 
         public virtual User User { get; set; }
+
+
+        public string UserRole { get; set; }
     }
 }

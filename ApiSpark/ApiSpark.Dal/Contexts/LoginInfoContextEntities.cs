@@ -13,8 +13,17 @@ namespace ApiSpark.Dal.Contexts
 
         public LoginInfoContextEntities() : base("name=Login")
         {
+         
             Database.SetInitializer<LoginInfoContextEntities>(new CreateDatabaseIfNotExists<LoginInfoContextEntities>());
         }
         public DbSet<Login> Logins { get; set; }
+        public DbSet<User> Users { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Login>()
+                .HasRequired(s => s.User);
+                
+        }
     }
 }

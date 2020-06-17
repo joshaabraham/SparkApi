@@ -112,6 +112,10 @@
     <Compile Include="Media\Files.cs" />
     <Compile Include="Media\Medium.cs" />
     <Compile Include="Media\PhotosVideo.cs" />
+    <Compile Include="Migrations\202006170130518_loginUser-V1.cs" />
+    <Compile Include="Migrations\202006170130518_loginUser-V1.designer.cs">
+      <DependentUpon>202006170130518_loginUser-V1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScrumBoard\Boards.cs" />
@@ -148,6 +152,11 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202006170130518_loginUser-V1.resx">
+      <DependentUpon>202006170130518_loginUser-V1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
